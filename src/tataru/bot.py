@@ -2,6 +2,7 @@ import discord
 from discord import Interaction, Member
 from discord.ext.commands import Bot
 
+
 # TODO: swap to discord.Client
 def get_bot() -> Bot:
     intents = discord.Intents.default()

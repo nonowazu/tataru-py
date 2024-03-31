@@ -12,6 +12,7 @@ def main() -> int:
     bot.run(environ.get('DISCORD_TOKEN'))
     return 0
 
+
 if __name__ == '__main__':
     load_dotenv()
     exit(main())
