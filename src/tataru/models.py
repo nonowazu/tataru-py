@@ -3,10 +3,10 @@ from __future__ import annotations
 import uuid
 
 from sqlalchemy import Uuid, ForeignKey, String, Table, Column
-from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
+from sqlalchemy.orm import MappedAsDataclass, DeclarativeBase, Mapped, mapped_column, relationship
 
 
-class Base(DeclarativeBase):
+class Base(MappedAsDataclass, DeclarativeBase):
     pass
 
 # TODO: investigate swapping ids to uuid7
