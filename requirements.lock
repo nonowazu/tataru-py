@@ -19,6 +19,8 @@ discord-py==2.3.2
 frozenlist==1.4.1
     # via aiohttp
     # via aiosignal
+greenlet==3.0.3
+    # via sqlalchemy
 idna==3.6
     # via yarl
 multidict==6.0.5
@@ -26,5 +28,9 @@ multidict==6.0.5
     # via yarl
 python-dotenv==1.0.1
     # via tataru
+sqlalchemy==2.0.29
+    # via tataru
+typing-extensions==4.10.0
+    # via sqlalchemy
 yarl==1.9.4
     # via aiohttp

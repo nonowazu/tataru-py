@@ -5,6 +5,7 @@ description = "Add your description here"
 dependencies = [
     "discord.py>=2.3.2",
     "python-dotenv>=1.0.1",
+    "sqlalchemy>=2.0.29",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
@@ -18,6 +19,13 @@ managed = true
 dev-dependencies = [
     "ruff>=0.3.4",
 ]
+
+[tool.ruff]
+line-length = 120
+indent-width = 4
+
+[tool.ruff.format]
+quote-style = "single"
 
 [tool.hatch.metadata]
 allow-direct-references = true
